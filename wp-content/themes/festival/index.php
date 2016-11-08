@@ -13,14 +13,18 @@
 
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
+        <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>> <!-- pro blog-ID stylování -->  
+
           <h3 class="blog-post-title"><a href="<?php the_permalink();?>" title="<?php the_title(); ?>">
       <?php the_title(); ?>
           </a></h3>
 
 <p class="datum-clanku blog-post-meta">Zveřejněno: <?php echo get_the_date('j.n.Y');?>, Kategorie: <?php the_category(', ');?> </p>
 
+     <?php the_post_thumbnail('medium'); ?>         
      <?php the_excerpt(); ?>         
-          
+    
+          </div>          
 
 <?php endwhile; else : ?>
   <p><?php _e( 'Sorry, no pages matched your criteria.' ); ?></p>

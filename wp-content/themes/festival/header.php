@@ -77,7 +77,7 @@
 
   <div class="container-fluid">
       <div class="row feature">
-        <img src="<?php echo esc_url(get_template_directory_uri());?>/img/cover.jpg" data-rjs="3" alt="Písně s příběhem" class="pozadi"/>
+        <img src="<?php header_image();?>" data-rjs="3" alt="Písně s příběhem" class="pozadi"/>
           <div class="feature-text col-xs-12 col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">
             <div class="pozadi">
               <img src="<?php echo esc_url(get_template_directory_uri());?>/img/logo.png" data-rjs="3" alt="Logo" class="logo">

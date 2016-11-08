@@ -2,7 +2,7 @@
 
 /*
 
-Template name: Single post template
+Template name: Archive template
 
 */
 
@@ -16,6 +16,8 @@ get_header(); ?>
         
     <div class="col-md-10 col-md-offset-1 col-sm-12 col-xs-12 blog-posty">
           
+<h2><?php archivy() ?>
+
 
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
@@ -24,8 +26,6 @@ get_header(); ?>
          </h1>
 
 <p class="datum-clanku blog-post-meta">Zveřejněno: <?php echo get_the_date('j.n.Y');?>, Kategorie: <?php the_category(', ');?> </p>
-
-<div class="obrazek_v_textu"><?php the_post_thumbnail('medium') ?></div>
 
      <?php the_content(); ?>         
           

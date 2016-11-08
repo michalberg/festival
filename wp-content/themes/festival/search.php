@@ -1,37 +1,30 @@
-<?php 
-
-/*
-
-Template name: Single post template
-
-*/
-
-get_header(); ?>
+<?php get_header(); ?>
 
 
-<section id="page">
+<section id="aktuality">
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-10 col-sm-10 col-md-offset-1 novinky">
         
     <div class="col-md-10 col-md-offset-1 col-sm-12 col-xs-12 blog-posty">
           
+          <h2>Výsledky vyhledávání pro: <?php printf('%s', get_search_query())?></h2>
+      
 
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-          <h1>
+          <h3 class="blog-post-title"><a href="<?php the_permalink();?>" title="<?php the_title(); ?>">
       <?php the_title(); ?>
-         </h1>
+          </a></h3>
 
 <p class="datum-clanku blog-post-meta">Zveřejněno: <?php echo get_the_date('j.n.Y');?>, Kategorie: <?php the_category(', ');?> </p>
 
-<div class="obrazek_v_textu"><?php the_post_thumbnail('medium') ?></div>
-
-     <?php the_content(); ?>         
+     <?php the_post_thumbnail('medium'); ?>         
+     <?php the_excerpt(); ?>         
           
 
 <?php endwhile; else : ?>
-  <p><?php _e( 'Sorry, no pages matched your criteria.' ); ?></p>
+  <p><?php _e( 'Nic nenalezeno' ); ?></p>
 <?php endif; ?>  
           </div> <!-- konec /col-md-10 blog-posty -->  
 
