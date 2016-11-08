@@ -68,17 +68,19 @@ if (count($interpret) == 4) {
 		$interpret_values=implode("','", $interpret) . "'";
 }
 
+// připojení k DB , obsahuje i API a salt
+require_once ("db.ini");
 
 // vytváří token - devítimístné náhodné číslo + salt 
 
-$token_hash = urlencode(crypt($email, 'kamnepuUS'));
+$token_hash = urlencode(crypt($email, $salt));
 
 // echo '<pre>'.print_r($_POST,true).'</pre>';
 
 
-// připojení k DB 
 
-require_once ("db.ini");
+
+
 
 try {
     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
