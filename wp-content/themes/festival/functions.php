@@ -11,7 +11,7 @@ function festival_setup() {
 
 	add_theme_support('automatic-feed-links');
 	add_theme_support('title-tag');
-	add_theme_support( 'post-thumbnails' ); 
+	add_theme_support('post-thumbnails' ); 
 
 	// Register Custom Navigation Walker
 	require_once('wp_bootstrap_navwalker.php');
@@ -42,11 +42,15 @@ wp_enqueue_style('custom',
 
 wp_enqueue_script('bootstrap-js', 
 	get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), true);
-
-
 }
 
 add_action ('wp_enqueue_scripts', 'festival_scripts');
+
+function wpdocs_scripts_method() {
+    wp_enqueue_script( 'hlasovani', get_stylesheet_directory_uri() . '/js/hlasovani.js', array( 'jquery' ) );
+}
+add_action( 'wp_enqueue_scripts', 'wpdocs_scripts_method' );
+
 
 
 function wpdocs_excerpt_more( $more ) {

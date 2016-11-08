@@ -46,9 +46,6 @@
     <div class="row">
       <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 facebook">
 
-      <a href="http://facebook.com/pisnespribehem">
-        <img src="<?php echo esc_url(get_template_directory_uri());?>/img/ico-fb.png" alt="facebook"></a>
-
 
 <?php if ( is_active_sidebar( 'footer_widget_area' ) ) : ?>
   <div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
@@ -62,7 +59,6 @@
   </div> <!-- konec /container -->  
 
 </section>
-
 
 
 

@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 
-<section id="aktuality">
+<section id="novinky">
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-10 col-sm-10 col-md-offset-1 novinky">
