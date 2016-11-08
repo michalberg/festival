@@ -51,8 +51,6 @@ try {
    
     }
 
-
-
 //pokud ne, updatuje se confirmed na 1
 
     
