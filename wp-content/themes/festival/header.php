@@ -83,7 +83,7 @@
               <img src="<?php echo esc_url(get_template_directory_uri());?>/img/logo.png" data-rjs="3" alt="Logo" class="logo">
               <h2><?php vlastni_text();?></h2>
               <h4>Hudební festival Michala Horáčka a jeho přátel</h4>
-              <h4>27. - 28. května 2017, Roudnice nad Labem</h4>
+              <h4>26. - 27. května 2017, Roudnice nad Labem</h4>
             </div> <!-- konec /pozadi -->   
           </div> <!-- konec /feature text -->   
       <img src="<?php echo esc_url(get_template_directory_uri());?>/img/foto-horacek_2.png" data-rjs="3" class="foto-horacek" alt="Michal Horáček">
