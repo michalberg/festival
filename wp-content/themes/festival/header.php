@@ -77,16 +77,23 @@
 
   <div class="container-fluid">
       <div class="row feature">
-        <img src="<?php header_image();?>" data-rjs="3" alt="Písně s příběhem" class="pozadi"/>
+        <img src="<?php 
+        if (is_front_page()) {
+          header_image();
+        } else {
+          echo esc_url(get_template_directory_uri()) . '/img/psp-cover-low.jpg';
+        }?>" data-rjs="3" alt="Písně s příběhem" class="pozadi"/>
           <div class="feature-text col-xs-12 col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">
-            <div class="pozadi">
-              <img src="<?php echo esc_url(get_template_directory_uri());?>/img/logo.png" data-rjs="3" alt="Logo" class="logo">
-              <h2><?php vlastni_text();?></h2>
-              <h4>Hudební festival Michala Horáčka a jeho přátel</h4>
-              <h4>26. - 27. května 2017, Roudnice nad Labem</h4>
+            <div class="pozadi <?php if ( ! is_front_page()) echo (' nonhome');?>">
+              <?php vlastni_text();?>
             </div> <!-- konec /pozadi -->   
           </div> <!-- konec /feature text -->   
-      <img src="<?php echo esc_url(get_template_directory_uri());?>/img/foto-horacek_2.png" data-rjs="3" class="foto-horacek" alt="Michal Horáček">
+      
+<?php 
+      if (is_front_page()) {
+        ?>
+        <img src="<?php echo esc_url(get_template_directory_uri());?>/img/foto-horacek_2.png" data-rjs="3" class="foto-horacek" alt="Michal Horáček">
+        <?php } ?>
       </div> <!-- konec /row -->   
   </div> <!-- konec /containter fluid -->   
 

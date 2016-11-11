@@ -11,15 +11,15 @@
         <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 bg-interpret">
             <div class="datum">
 
-            sobota 27. května 2017
+            pátek 26. května 2017
 
             </div> <!-- konec /datum -->   
 
         <div class="row">
           <div class="col-md-6">
               <a href="program">
-          <img src="<?php echo esc_url(get_template_directory_uri());?>/img/img-aneta.png" data-rjs="3"  alt="Aneta Langerová" class="img-rounded full-width">
-          <h5>Aneta Langerová</h5>
+          <img src="<?php echo esc_url(get_template_directory_uri());?>/img/cover-pavlica.jpg" data-rjs="3"  alt="Hradišťan &amp; Jiří Pavlica" class="img-rounded full-width">
+          <h5>Hradišťan &amp; Jiří Pavlica</h5>
         </a>
 
             </div> <!-- konec /vnitřní Aneta -->   
@@ -29,7 +29,7 @@
             <div class="col-md-6">
 
         <a href="program">
-          <img src="<?php echo esc_url(get_template_directory_uri());?>/img/img-kittchen.png"  data-rjs="3" alt="Kittchen"  class="img-rounded full-width second-duo" >
+          <img src="<?php echo esc_url(get_template_directory_uri());?>/img/cover-kittchen.jpg"  data-rjs="3" alt="Kittchen"  class="img-rounded full-width second-duo" >
           <h5>Kittchen</h5>
         </a>
 
@@ -56,14 +56,14 @@
         <div class="col-md-10 col-md-offset-1  col-sm-10 col-sm-offset-1  bg-interpret">
             <div class="datum">
 
-            neděle 28. května 2017
+            sobota 27. května 2017
 
             </div> <!-- konec /datum -->   
 
         <div class="row">
           <div class="col-md-6">
               <a href="program">
-          <img src="<?php echo esc_url(get_template_directory_uri());?>/img/img-orffove.png" data-rjs="3"  alt="Bratří Orffové" class="img-rounded full-width">
+          <img src="<?php echo esc_url(get_template_directory_uri());?>/img/cover-orffove.jpg" data-rjs="3"  alt="Bratří Orffové" class="img-rounded full-width">
           <h5>Bratří Orffové</h5>
         </a>
 
@@ -74,7 +74,7 @@
             <div class="col-md-6">
 
         <a href="program">
-          <img src="<?php echo esc_url(get_template_directory_uri());?>/img/img-horacek.png"  data-rjs="3" alt="Michal Horáček a přátelé"  class="img-rounded full-width second-duo" >
+          <img src="<?php echo esc_url(get_template_directory_uri());?>/img/cover-horacek.jpg"  data-rjs="3" alt="Michal Horáček a přátelé"  class="img-rounded full-width second-duo" >
           <h5>Michal Horáček &amp; přátelé</h5>
         </a>
 

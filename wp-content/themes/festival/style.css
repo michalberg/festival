@@ -103,7 +103,6 @@ text-decoration: underline;
 .feature img.pozadi {
 	width: 100%;
     background-image: linear-gradient(117deg, #c92a2a, #a61e4d 20%, #862e9c 40%, #5f3dc4 60%, #364fc7 80%, #0b7285);
-  	background-image: linear-gradient(117deg, #c92a2a, var(--rouge) 20%, #862e9c 40%, #5f3dc4 60%, #364fc7 80%, #0b7285);
 	max-height: 600px;
 }
 
@@ -113,7 +112,6 @@ text-decoration: underline;
 	bottom:0;
 	font-size: 0;
 }
-
 
 .feature-text:before {
 contenct:'';
@@ -147,6 +145,10 @@ line-height: 100px;
   letter-spacing: 4px;
   text-align: center;
   color: #f8f9fa;
+}
+
+.feature-text .pozadi.nonhome h2 
+{margin-top:-35px;
 }
 
 .feature-text .pozadi h4 
@@ -320,7 +322,7 @@ font-size: 36px;
 
 #artists .vstupenky:hover {
 background-color: #c2255c;
-  /* box-shadow: inset 0 -4px 0 0 #a61e4d; */
+  box-shadow: none;
   background-image: linear-gradient(117deg, #c92a2a, #a61e4d 20%, #862e9c 40%);
 }
 

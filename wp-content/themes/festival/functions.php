@@ -100,17 +100,31 @@ add_action( 'widgets_init', 'arphabet_widgets_init' );
 
 
 
-/* funkce pro výukové účely, prakticky nepoužita
-vkládá odlišný text do headeru podle toho, zda jsme na frontpage nebo na home či jiné strnce
+/* funkce vkládá odlišný text do headeru podle toho, zda jsme na frontpage nebo na home či jiné strnce
  */
 function vlastni_text() {
 	if ( is_front_page()) {
-		echo('PÍSNĚ S PŘÍBĚHEM');
+	echo('<img src="' . esc_url(get_template_directory_uri()) . '/img/logo.png" data-rjs="3" alt="Logo" class="logo">');
+		echo('<h2>PÍSNĚ S PŘÍBĚHEM</h2>');
+		echo('<h4>Hudební festival Michala Horáčka a jeho přátel</h4>');
+		echo('<h4>26. - 27. května 2017, Roudnice nad Labem</h4>');
 	} elseif (is_home()) {
 		echo('PÍSNĚ S PŘÍBĚHEM');
-	} else {
-		echo('PÍSNĚ S PŘÍBĚHEM');
-	}
+	} elseif (is_page('novinky')) {
+		echo('<h2>NOVINKY</h2>');
+	} elseif (is_page('vstupenky')) {
+		echo('<h2>VSTUPENKY</h2>');
+	} elseif (is_page('hlasovani')) {
+		echo('<h2>HLASOVÁNÍ</h2>');
+	}elseif (is_page('program')) {
+		echo('<h2>PROGRAM</h2>');
+	} elseif (is_page('prakticke-informace')) {
+		echo('<h2>PRAKTICKÉ INFORMACE</h2>');
+	} else 
+	{
+		echo('<h2>PÍSNĚ S PŘÍBĚHEM</h2>');
+	} 
+
 }
 
 
