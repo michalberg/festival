@@ -24,7 +24,7 @@
 
           
       ?>
-          <p class="datum-clanku blog-post-meta">Poslední aktualizace: <?php echo get_the_date('j.n.Y');?> </p>
+          <p class="datum-clanku blog-post-meta">Poslední aktualizace: <?php echo the_modified_date('j.n.Y');?> </p>
 
      <?php } ?> 
 
