@@ -18,6 +18,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 /* === GLOBAL === */
 
+
 body {
 	font-family: "filson-soft", sans-serif;
 	font-weight: 300;
@@ -147,8 +148,8 @@ line-height: 100px;
   color: #f8f9fa;
 }
 
-.feature-text .pozadi.nonhome h2 
-{margin-top:-35px;
+.feature-text .nonhome h2 
+{margin-top:-80px;
 }
 
 .feature-text .pozadi h4 
@@ -222,7 +223,7 @@ line-height: 100px;
   border-radius: 4px;
   background-color: #fff;
   box-shadow: 0 4px 8px 0 #C2255C;
-  border: solid 1px #5261a5;
+  border: solid 1px #C2255C;
 
 }
 
@@ -294,7 +295,7 @@ line-height: 100px;
 
 /* ===  tlačítko vstupenky  === */
 
-#artists .vstupenky {
+.vstupenky {
 margin-top: 0px;
   border-radius: 4px;
   background-color: #c2255c;
@@ -303,7 +304,7 @@ margin-top: 0px;
   padding: 10px 96px;
 }
 
-#artists  .vstupenky a {
+.vstupenky a {
 	width: 100%;
 	display: block;
 font-size: 36px;
@@ -316,11 +317,11 @@ font-size: 36px;
   text-decoration: none;
 }
 
-#artists .vstupenky a:hover {
+.vstupenky a:hover {
 	text-decoration: underline;
 }
 
-#artists .vstupenky:hover {
+.vstupenky:hover {
 background-color: #c2255c;
   box-shadow: none;
   background-image: linear-gradient(117deg, #c92a2a, #a61e4d 20%, #862e9c 40%);
@@ -337,7 +338,7 @@ background-color: #c2255c;
 
 /* ===  aktuality  === */
 #aktuality {
-	margin-top: 30px;
+	margin-top: 0px;
 }
 
 .novinky {
@@ -349,7 +350,7 @@ background-color: #c2255c;
   padding-bottom: 4%;
   /* margin-left:12.49999% ; */
   margin-bottom: 26px;
-
+  margin-top: 26px;
 }
 
 .novinky h3 {
@@ -460,6 +461,7 @@ margin-bottom: 3%;}
 	text-align: center;
 	background: #c2255c;
 	color: #fff;
+  margin-top:20px;
 }
 
 .nav-footer {
@@ -521,6 +523,10 @@ div.obrazek_v_textu {}
 
 @media screen and (max-width:991px)  {
 
+.navbar .navbar-nav {
+  display: block;
+}
+
 .custom-offset-left {margin-left:0}
 .custom-offset-right {margin-left:0}
 
@@ -542,15 +548,12 @@ margin-bottom: 20px;}
 
 @media screen and (max-width : 768px) {
 
-.navbar .navbar-nav {
-  display: block;
-}
 
 .feature-text .pozadi h2 
 {
   font-size: 40px;
   line-height: 40px;
-  margin-top:2%px;
+  margin-top:2%;
 }
 
 .feature-text .pozadi h4 
@@ -560,7 +563,7 @@ line-height: 12px;
 
 .feature-text .pozadi {margin-top: 3%}
 
-	#welcome h2 {font-size: 20px;
+#welcome h2 {font-size: 20px;
 	margin-top: 10px;
 	margin-bottom:6px;
 	}
@@ -581,17 +584,19 @@ line-height: 12px;
   	}
 
 .novinky {
-	margin-left:0;
-	margin-right:0;
-	margin-top: 22px;
-	width: 100%;
-	}
+  margin-left:0;
+  margin-right:0;
+  margin-top: 22px;
+  width: 100%;
+  min-height: 1300px;
+  }
+
 
 }
 
 @media screen and (max-width:1124px) and (min-width:767px) {
 
-.feature-text .pozadi {margin-top: 7%}
+.feature-text .pozadi {margin-top: 130px}
 
 }
 
@@ -619,6 +624,7 @@ margin-bottom: 55px;}
 		{
 		  font-size: 44px;
 		  line-height: 60px;
+      margin-top: 2%;
 		}
 
 		.feature-text .pozadi h4 
@@ -641,7 +647,7 @@ margin-bottom: 55px;}
 
 .podpis {margin-top:15px;}
 
-.feature img.pozadi {height: 220px;}
+ .nopad {paddding:0;}
 
 .foto-horacek {
   		width:80px;

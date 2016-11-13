@@ -93,17 +93,8 @@
       
    </div> <!-- konec /container -->   
 
-   <div class="row">
-
-    <div class="center">
-      <button class="btn vstupenky">
-
-          <a href="vstupenky">Koupit vstupenky</a>
-      
-      </button>
-    </div> <!-- konec /center -->   
-  </div><!-- konec /row -->   
-
+   
+<?php get_template_part('content-vstupenky');?>
   
   </div><!-- konec /container -->   
 </section> <!-- konec /artists - seznam kapel -->  

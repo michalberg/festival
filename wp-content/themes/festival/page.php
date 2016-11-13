@@ -4,9 +4,9 @@
 <section id="page">
   <div class="container-fluid">
     <div class="row">
-      <div class="col-md-10 col-sm-10 col-md-offset-1 novinky">
-        
-		<div class="col-md-10 col-md-offset-1 col-sm-12 col-xs-12 blog-posty">
+    
+    <div class="col-md-10 col-sm-10 col-md-offset-1 bezpad  novinky">
+    <div class="col-md-10 col-md-offset-1 col-sm-12 col-xs-12 blog-posty">
           
           
 
@@ -44,7 +44,8 @@
 
 
 
-
+<?php get_template_part('content-vstupenky');?>
+  
 
 
 <?php get_footer(); ?>

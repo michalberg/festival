@@ -26,7 +26,7 @@ get_header(); ?>
 
      <?php the_content(); ?>         
           
-
+<!--
 
 <form id="votingform" method="post" action="../vote.php">
 <div class="panel panel-default">
@@ -84,7 +84,12 @@ get_header(); ?>
 </div>
 
 </div>
-</div><!-- konec panelu -->  
+</div>
+
+-->  
+
+
+<!-- konec panelu -->  
 
 </form>
 

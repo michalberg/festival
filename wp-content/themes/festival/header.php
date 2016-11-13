@@ -83,7 +83,7 @@
         } else {
           echo esc_url(get_template_directory_uri()) . '/img/psp-cover-low.jpg';
         }?>" data-rjs="3" alt="Písně s příběhem" class="pozadi"/>
-          <div class="feature-text col-xs-12 col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">
+          <div class="feature-text col-xs-12 col-md-12 col-lg-12">
             <div class="pozadi <?php if ( ! is_front_page()) echo (' nonhome');?>">
               <?php vlastni_text();?>
             </div> <!-- konec /pozadi -->   

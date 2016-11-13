@@ -109,14 +109,12 @@ function vlastni_text() {
 		echo('<h4>Hudební festival Michala Horáčka a jeho přátel</h4>');
 		echo('<h4>26. - 27. května 2017, Roudnice nad Labem</h4>');
 	} elseif (is_home()) {
-		echo('PÍSNĚ S PŘÍBĚHEM');
-	} elseif (is_page('novinky')) {
 		echo('<h2>NOVINKY</h2>');
 	} elseif (is_page('vstupenky')) {
 		echo('<h2>VSTUPENKY</h2>');
 	} elseif (is_page('hlasovani')) {
 		echo('<h2>HLASOVÁNÍ</h2>');
-	}elseif (is_page('program')) {
+	} elseif (is_page('program')) {
 		echo('<h2>PROGRAM</h2>');
 	} elseif (is_page('prakticke-informace')) {
 		echo('<h2>PRAKTICKÉ INFORMACE</h2>');

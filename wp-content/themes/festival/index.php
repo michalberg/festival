@@ -8,9 +8,6 @@
         
     <div class="col-md-10 col-md-offset-1 col-sm-12 col-xs-12 blog-posty">
           
-          <h2>Novinky</h2>
-      
-
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
         <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>> <!-- pro blog-ID stylování -->  
